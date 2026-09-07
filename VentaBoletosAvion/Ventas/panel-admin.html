@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - AerolineFex</title>
+    <link rel="stylesheet" href="VentaBoletosAvion/Ventas/css/style.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+        <!-- Menú Lateral Fijo (Requisito ERS para Administrador) -->
+        <aside class="sidebar">
+            <h2>AerolineFex Admin</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Gestionar Vuelos (RF04)</a></li>
+                    <li><a href="#">Gestionar Aeropuertos</a></li>
+                    <li><a href="#">Reportes</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Área Principal del Administrador -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <h1>Mantenedor de Vuelos (RF04)</h1>
+                <button id="btnLogout" class="btn-danger">Cerrar Sesión</button>
+            </header>
+
+            <section class="content-box">
+                <p>Bienvenido al Backoffice de AerolineFex. Desde aquí puedes gestionar el catálogo de vuelos, precios e itinerarios.</p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Verificación de sesión de seguridad
+        const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"));
+        if (!usuario || usuario.rol !== "administrador") {
+            alert("Acceso denegado. Debes iniciar sesión como administrador.");
+            window.location.href = "login.html";
+        }
+
+        // Botón Cerrar Sesión
+        document.getElementById("btnLogout").addEventListener("click", () => {
+            localStorage.removeItem("usuarioLogueado");
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>
