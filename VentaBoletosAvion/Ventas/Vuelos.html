@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #19191b ; padding-left: 1vw;">
+        <div class=" container-fluid">
+            <a class="navbar-brand" href="#"
+                style="color: aliceblue; font-weight:bold ; padding-right: 32vw;">AEROLINEFEX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="MenuPrincipal.html"
+                            style="color: aliceblue;">Bienvenido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active vuelo" aria-current="page" href="index.html" style="color: aliceblue;">Vuelos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Paquetes.html" style="color: aliceblue;">Paquetes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Hoteles.html" style="color: aliceblue;">Hoteles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Consultas.html" style="color: aliceblue;">Consultas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+
+        <div class="card shadow-lg border-0 rounded-4 p-4"
+            style="max-width: 1200px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.95);">
+
+
+            <ul class="nav nav-tabs border-0 mb-3" id="pestañasBuscador">
+                <li class="nav-item">
+
+                    <a class="nav-link active fw-bold text-danger border-0 border-bottom border-danger" href="#">Viajes</a>
+                </li>
+
+
+            <form class="row g-2 align-items-end">
+
+
+                <div class="col-lg-3 col-md-6">
+                    <label class="form-label text-muted small fw-bold mb-1">Origen</label>
+                    <input type="text" class="form-control" placeholder="Santiago, Chile (SCL)">
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                    <label class="form-label text-muted small fw-bold mb-1">Destino</label>
+                    <input type="text" class="form-control" placeholder="¿A dónde viajas?">
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <label class="form-label text-muted small fw-bold mb-1">Fechas</label>
+                    <div class="input-group">
+                        <input type="date" class="form-control" title="Fecha de Ida">
+                        <input type="date" class="form-control" title="Fecha de Vuelta">
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-6">
+                    <label class="form-label text-muted small fw-bold mb-1">Pasajeros</label>
+                    <select class="form-select">
+                        <option>1 Turista</option>
+                        <option>2 Turistas</option>
+                        <option>3 Turistas</option>
+                    </select>
+                </div>
+
+
+                <div class="col-lg-1 col-md-12 mt-3 mt-lg-0">
+
+                    <button type="submit" class="btn btn-danger w-100 fw-bold rounded-pill p-2">Buscar</button>
+                </div>
+                <img src="img/Av2.jpg" class="d-block w-100" alt="">
+
+            </form>
+        </div>
+    </div>
+
+</html>

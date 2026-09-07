@@ -1,0 +1,29 @@
+.menuprincipal{
+    color: #ffc107 !important; 
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5); 
+}
+
+.vuelo{
+    color: #ffc107 !important; 
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5); 
+}
+
+.paquetes{
+    color: #ffc107 !important; 
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5); 
+}
+
+.hoteles{
+    color: #ffc107 !important; 
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5); 
+}
+
+.consultas{
+    color: #ffc107 !important; 
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5); 
+}
