@@ -4,49 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Administración - AerolineFex</title>
-    <link rel="stylesheet" href="VentaBoletosAvion/Ventas/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div class="admin-layout">
-        <!-- Menú Lateral Fijo (Requisito ERS para Administrador) -->
+        <!-- Menú Lateral Fijo (Actualizado) -->
         <aside class="sidebar">
             <h2>AerolineFex Admin</h2>
             <nav>
                 <ul>
-                    <li><a href="#" class="active">Gestionar Vuelos (RF04)</a></li>
-                    <li><a href="#">Gestionar Aeropuertos</a></li>
-                    <li><a href="#">Reportes</a></li>
+                    <li><a href="#" class="active">Gestionar Vuelos</a></li>
                 </ul>
             </nav>
         </aside>
 
-        <!-- Área Principal del Administrador -->
         <main class="admin-main">
             <header class="admin-header">
-                <h1>Mantenedor de Vuelos (RF04)</h1>
+                <h1>Mantenedor de Vuelos</h1>
                 <button id="btnLogout" class="btn-danger">Cerrar Sesión</button>
             </header>
 
             <section class="content-box">
-                <p>Bienvenido al Backoffice de AerolineFex. Desde aquí puedes gestionar el catálogo de vuelos, precios e itinerarios.</p>
+                <strong>Agregar / Editar Vuelo</strong>
+                <form id="formVuelo" class="crud-form">
+                    <input type="hidden" id="vueloId">
+                    <div class="form-group">
+                        <label>Origen:</label>
+                        <input type="text" id="origen" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Destino:</label>
+                        <input type="text" id="destino" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha:</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Precio (CLP):</label>
+                        <input type="number" id="precio" required>
+                    </div>
+                    <button type="submit" class="btn-primary" id="btnGuardar">Guardar Vuelo</button>
+                </form>
+            </section>
+
+            <section class="content-box table-container">
+                <strong>Catálogo de Vuelos</strong>
+                <table class="crud-table">
+                    <thead>
+                        <tr>
+                            <th>Origen</th>
+                            <th>Destino</th>
+                            <th>Fecha</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaVuelosBody">
+                        <!-- Los vuelos se insertarán aquí con JavaScript -->
+                    </tbody>
+                </table>
             </section>
         </main>
     </div>
 
-    <script>
-        // Verificación de sesión de seguridad
-        const usuario = JSON.parse(localStorage.getItem("usuarioLogueado"));
-        if (!usuario || usuario.rol !== "administrador") {
-            alert("Acceso denegado. Debes iniciar sesión como administrador.");
-            window.location.href = "login.html";
-        }
-
-        // Botón Cerrar Sesión
-        document.getElementById("btnLogout").addEventListener("click", () => {
-            localStorage.removeItem("usuarioLogueado");
-            window.location.href = "login.html";
-        });
-    </script>
+    <!-- Script para lógica CRUD en Vanilla JS -->
+    <script src="js/admin.js"></script>
 </body>
 </html>
