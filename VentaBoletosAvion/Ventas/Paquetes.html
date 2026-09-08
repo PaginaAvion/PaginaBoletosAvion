@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <!-- Barra de Navegación -->
+
     <nav class="navbar navbar-expand-lg" style="background-color: #002a5c ; padding-left: 1vw;">
         <div class=" container-fluid">
             <a class="navbar-brand" href="#"
@@ -23,13 +23,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html" style="color: aliceblue;">Bienvenido</a>
+                        <a class="nav-link" aria-current="page" href="index.html"
+                            style="color: aliceblue;">Bienvenido</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="Vuelos.html" style="color: aliceblue;">Vuelos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active paquetes" href="index.html" style="color: aliceblue;">Paquetes</a>
+                        <a class="nav-link active paquetes" href="Paquetes.html" style="color: aliceblue;">Paquetes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Hoteles.html" style="color: aliceblue;">Hoteles</a>
@@ -39,21 +40,23 @@
                     </li>
                 </ul>
                 <!-- Botón del Carrito en el Navbar -->
-                <button class="btn btn-outline-light me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas">
+                <button class="btn btn-outline-light me-3" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#carritoOffcanvas">
                     🛒 Carrito (<span id="cart-count">0</span>)
                 </button>
             </div>
         </div>
     </nav>
 
-    <!-- Contenedor Principal de Paquetes -->
+
     <div class="container mt-5">
         <div class="row g-3 justify-content-center">
-            
-            <!-- Tarjeta 1: Islas del Caribe -->
+
+
             <div class="col-12 col-md-4">
                 <div class="card h-100 border-0 shadow-sm rounded-4 position-relative">
-                    <span class="badge bg-white text-dark position-absolute top-0 end-0 m-2 shadow-sm">Oferta de viajes</span>
+                    <span class="badge bg-white text-dark position-absolute top-0 end-0 m-2 shadow-sm">Oferta de
+                        viajes</span>
                     <img src="img/carive.jpg" class="card-img-top rounded-top-4" alt="Caribe"
                         style="height: 180px; object-fit: cover;">
                     <div class="card-body d-flex flex-column">
@@ -62,17 +65,20 @@
                         <div class="mt-auto">
                             <span class="text-muted small d-block">Desde</span>
                             <h4 class="fw-bold mb-2">$486.526</h4>
-                            <small class="text-muted d-block mb-3" style="font-size: 0.75rem;">Precio final por persona</small>
-                            <button class="btn btn-primary w-100 btn-add-cart" data-id="1" data-nombre="Islas del Caribe" data-precio="486526">Agregar al carrito</button>
+                            <small class="text-muted d-block mb-3" style="font-size: 0.75rem;">Precio final por
+                                persona</small>
+                            <button class="btn btn-primary w-100 btn-add-cart" data-id="1"
+                                data-nombre="Islas del Caribe" data-precio="486526">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Tarjeta 2: París -->
+
             <div class="col-12 col-md-4">
                 <div class="card h-100 border-0 shadow-sm rounded-4 position-relative">
-                    <span class="badge bg-white text-dark position-absolute top-0 end-0 m-2 shadow-sm">Oferta de viajes</span>
+                    <span class="badge bg-white text-dark position-absolute top-0 end-0 m-2 shadow-sm">Oferta de
+                        viajes</span>
                     <img src="img/Paris.jpg" class="card-img-top rounded-top-4" alt="Paris"
                         style="height: 180px; object-fit: cover;">
                     <div class="card-body d-flex flex-column">
@@ -81,17 +87,20 @@
                         <div class="mt-auto">
                             <span class="text-muted small d-block">Desde</span>
                             <h4 class="fw-bold mb-2">$632.165</h4>
-                            <small class="text-muted d-block mb-3" style="font-size: 0.75rem;">Precio final por persona</small>
-                            <button class="btn btn-primary w-100 btn-add-cart" data-id="2" data-nombre="París, Francia" data-precio="632165">Agregar al carrito</button>
+                            <small class="text-muted d-block mb-3" style="font-size: 0.75rem;">Precio final por
+                                persona</small>
+                            <button class="btn btn-primary w-100 btn-add-cart" data-id="2" data-nombre="París, Francia"
+                                data-precio="632165">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Tarjeta 3: Los Ángeles -->
+
             <div class="col-12 col-md-4">
                 <div class="card h-100 border-0 shadow-sm rounded-4 position-relative">
-                    <span class="badge bg-white text-dark position-absolute top-0 end-0 m-2 shadow-sm">Oferta de viajes</span>
+                    <span class="badge bg-white text-dark position-absolute top-0 end-0 m-2 shadow-sm">Oferta de
+                        viajes</span>
                     <img src="img/Los angeles.avif" class="card-img-top rounded-top-4" alt="Los angeles"
                         style="height: 180px; object-fit: cover;">
                     <div class="card-body d-flex flex-column">
@@ -100,41 +109,94 @@
                         <div class="mt-auto">
                             <span class="text-muted small d-block">Desde</span>
                             <h4 class="fw-bold mb-2">$394.500</h4>
-                            <small class="text-muted d-block mb-3" style="font-size: 0.75rem;">Precio final por persona</small>
-                            <button class="btn btn-primary w-100 btn-add-cart" data-id="3" data-nombre="Los Ángeles" data-precio="394500">Agregar al carrito</button>
+                            <small class="text-muted d-block mb-3" style="font-size: 0.75rem;">Precio final por
+                                persona</small>
+                            <button class="btn btn-primary w-100 btn-add-cart" data-id="3" data-nombre="Los Ángeles"
+                                data-precio="394500">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
+        <div class="row g-3 justify-content-center">
 
-    <!-- Panel Lateral del Carrito (Offcanvas Bootstrap) -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas">
-        <div class="offcanvas-header bg-light">
-            <h5 class="offcanvas-title fw-bold">Tu Carrito de Compras</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body d-flex flex-column">
-            <ul id="lista-carrito" class="list-group mb-3">
-                <!-- Los items se insertan aquí con JavaScript -->
-            </ul>
-            <div class="mt-auto border-top pt-3">
-                <h5 class="fw-bold d-flex justify-content-between">
-                    Total: <span id="total-carrito">$0</span>
-                </h5>
-                <button class="btn btn-success w-100 mt-2" id="btn-comprar">Finalizar Compra</button>
-                <button class="btn btn-outline-danger w-100 mt-2" id="btn-vaciar">Vaciar Carrito</button>
+            <div class="col-12 col-md-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 position-relative">
+
+                    <span class="badge bg-white text-dark position-absolute top-0 end-0 m-2 shadow-sm">Oferta de
+                        viajes</span>
+
+
+                    <img src="img/japon.jpg" class="card-img-top rounded-top-4" alt="Tokyo"
+                        style="height: 180px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title fw-bold"> Tokyo Japon</h6>
+                        <p class="text-muted small mb-3"> Paquete 5 noches de 5 estrellas</p>
+
+                        <div class="mt-auto">
+                            <span class="text-muted small d-block">Desde</span>
+                            <h4 class="fw-bold mb-0">$560.388</h4>
+                            <small class="text-muted" style="font-size: 0.75rem;">Precio final por persona</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-3">
+                <div class="card h-100 border-0 shadow-sm rounded-4 position-relative">
+                    <span class="badge bg-white text-dark position-absolute top-0 end-0 m-2 shadow-sm">Oferta de
+                        viajes</span>
+                    <img src="img/Andorra.jpg" class="card-img-top rounded-top-4" alt="Andorra"
+                        style="height: 180px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title fw-bold">Andorra</h6>
+                        <p class="text-muted small mb-3"> Paquete 5 noches de 5 estrellas</p>
+                        <div class="mt-auto">
+                            <span class="text-muted small d-block">Desde</span>
+                            <h4 class="fw-bold mb-0">$437.623</h4>
+                            <small class="text-muted" style="font-size: 0.75rem;">Precio final por persona</small>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="js/carrito.js"></script>
+
+</html>
+</div>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas">
+    <div class="offcanvas-header bg-light">
+        <h5 class="offcanvas-title fw-bold">Tu Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+        <ul id="lista-carrito" class="list-group mb-3">
+
+        </ul>
+        <div class="mt-auto border-top pt-3">
+            <h5 class="fw-bold d-flex justify-content-between">
+                Total: <span id="total-carrito">$0</span>
+            </h5>
+            <button class="btn btn-success w-100 mt-2" id="btn-comprar">Finalizar Compra</button>
+            <button class="btn btn-outline-danger w-100 mt-2" id="btn-vaciar">Vaciar Carrito</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+<script src="js/carrito.js"></script>
 
 </body>
+
 </html>
