@@ -159,14 +159,14 @@
         crossorigin="anonymous"></script>
         
     <script>
-        // Interceptar el envío del formulario para mostrar el mensaje de éxito
+        
         document.getElementById('form-consulta').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita que la página se recargue o se vaya en blanco
+            event.preventDefault(); 
             
-            // Muestra una alerta nativa del navegador confirmando el envío
+          
             alert("¡Mensaje enviado con éxito! Un agente de AerolineFex te responderá a la brevedad.");
             
-            // Limpia los campos del formulario automáticamente
+            
             this.reset();
         });
     </script>
