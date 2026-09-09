@@ -143,7 +143,7 @@ body {
     background-color: #004080;
 }
 
-/* Mensajes de Error (Requisito Usabilidad 3.4) */
+/*Mensajes de Error*/
 .error-message {
     color: red;
     font-size: 12px;
@@ -157,13 +157,13 @@ body {
     margin-top: 15px;
 }
 
-/* --- Estilos para el Panel del Administrador (Backoffice) --- */
+/* Estilos para el Panel del Administrador */
 .admin-layout {
     display: flex;
     min-height: 100vh;
 }
 
-/* Menú Lateral Fijo según informe ERS */
+/* Menú Lateral Fijo */
 .sidebar {
     width: 250px;
     background-color: #002a5c;
@@ -227,7 +227,7 @@ body {
     background-color: #c9302c;
 }
 
-/* --- Estilos CRUD Vuelos --- */
+/*Estilos CRUD Vuelos*/
 .content-box {
     margin-bottom: 20px;
 }

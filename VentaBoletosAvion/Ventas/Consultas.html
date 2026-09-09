@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AerolineFex - Consultas</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f4f5f7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .main-content {
+            flex: 1;
+        }
+    </style>
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg" style="background-color: #002a5c ; padding-left: 1vw;">
         <div class=" container-fluid">
-            <a class="navbar-brand" href="#"
-                style="color: aliceblue; font-weight:bold ; padding-right: 32vw;">AEROLINEFEX</a>
+            <a class="navbar-brand" href="index.html" style="color: aliceblue; font-weight:bold ; padding-right: 32vw;">AEROLINEFEX</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html"
-                            style="color: aliceblue;">Bienvenido</a>
+                        <a class="nav-link" aria-current="page" href="index.html" style="color: aliceblue;">Bienvenido</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Vuelos.html"
-                            style="color: aliceblue;">Vuelos</a>
+                        <a class="nav-link" aria-current="page" href="Vuelos.html" style="color: aliceblue;">Vuelos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Paquetes.html" style="color: aliceblue;">Paquetes</a>
@@ -39,13 +45,130 @@
                         <a class="nav-link" href="Hoteles.html" style="color: aliceblue;">Hoteles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active consultas" href="index.html" style="color: aliceblue;">Consultas</a>
+                        <a class="nav-link active" href="Consultas.html" style="color: #ffc107; font-weight: bold;">Consultas</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="Login.html" style="color: aliceblue;">Iniciar Sesion</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-</body>
+    <div class="main-content container my-5">
+        
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="fw-bold" style="color: #002a5c;">Centro de Ayuda y Consultas</h2>
+                <p class="text-muted">Completa el formulario y te responderemos a la brevedad posible.</p>
+            </div>
+        </div>
+        
+        <div class="row g-5 justify-content-center">
+            
+            <div class="col-lg-5"> 
+                <div class="card shadow-sm border-0 rounded-4 p-4">
+                    <h4 class="fw-bold mb-4" style="color: #002a5c;">Envíanos tu consulta</h4>
+                    
+                    <form id="form-consulta">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ej: Daniel Villar" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label fw-semibold">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo" placeholder="ejemplo@gmail.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label fw-semibold">Asunto / Motivo</label>
+                            <select class="form-select" id="asunto" required>
+                                <option value="" selected disabled>Selecciona una opción...</option>
+                                <option value="1">Problemas con un Vuelo</option>
+                                <option value="2">Dudas sobre Paquetes</option>
+                                <option value="3">Modificación de Reserva</option>
+                                <option value="4">Reembolsos y Cancelaciones</option>
+                                <option value="5">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe los detalles de tu consulta aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn w-100 text-white fw-bold py-2" style="background-color: #002a5c;">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
 
+            <div class="col-lg-5">
+                <h4 class="fw-bold mb-4" style="color: #002a5c;">Preguntas Frecuentes</h4>
+                
+                <div class="accordion shadow-sm" id="accordionFAQ">
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                ¿Cuánto equipaje puedo llevar?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-muted small">
+                                Todos nuestros vuelos incluyen un bolso de mano gratis. El equipaje de bodega dependerá de la tarifa seleccionada al momento de la compra.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                ¿Cómo puedo cancelar o modificar mi vuelo?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-muted small">
+                                Puedes gestionar tus vuelos iniciando sesión en tu cuenta. Recuerda que las cancelaciones están sujetas a las políticas de tu tarifa.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                ¿Qué incluyen los paquetes turísticos?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-muted small">
+                                Nuestros paquetes incluyen los vuelos de ida y vuelta, el alojamiento por las noches especificadas y, en algunos casos, traslados y desayunos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer style="background-color: #002a5c; padding: 15px 0;">
+        <div class="container text-center">
+            <p class="text-white m-0 small">&copy; 2026 AerolineFex. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+        
+    <script>
+        // Interceptar el envío del formulario para mostrar el mensaje de éxito
+        document.getElementById('form-consulta').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que la página se recargue o se vaya en blanco
+            
+            // Muestra una alerta nativa del navegador confirmando el envío
+            alert("¡Mensaje enviado con éxito! Un agente de AerolineFex te responderá a la brevedad.");
+            
+            // Limpia los campos del formulario automáticamente
+            this.reset();
+        });
+    </script>
+</body>
 </html>

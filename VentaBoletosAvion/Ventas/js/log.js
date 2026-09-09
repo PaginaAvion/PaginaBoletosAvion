@@ -1,4 +1,4 @@
-// 1. Simulación de Base de Datos de Usuarios (Requerimiento ERS)
+// 1. Simulación de Base de Datos de Usuarios 
 const usuariosDB = [
     {
         email: "admin@aerolinefex.cl", 
@@ -65,10 +65,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Redirección dependiendo del ROL del usuario
                 if (usuarioEncontrado.rol === "administrador") {
                     alert(`¡Bienvenido ${usuarioEncontrado.nombre}! Redirigiendo al Panel de Administración...`);
-                    window.location.href = "panel-admin.html"; // Va a tu panel
+                    window.location.href = "panel-admin.html"; 
                 } else {
                     alert(`¡Bienvenido ${usuarioEncontrado.nombre}! Redirigiendo a Vuelos...`);
-                    window.location.href = "Vuelos.html"; // Va a tu página de cliente
+                    window.location.href = "Vuelos.html"; 
                 }
             } else {
                 errorGlobal.textContent = "Correo o contraseña incorrectos. Intenta nuevamente.";
